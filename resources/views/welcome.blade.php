@@ -85,9 +85,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="/hello">Hello World</a>
-                    <a href="/stock_item">Stock Item</a>
-                   
+                    <a href="/siswa">Daftar Siswa</a>
+                    <a href="/how">Cari</a>
+                    <a href="/mapel">Mata Pelajaran</a>
                 </div>
             </div>
         </div>

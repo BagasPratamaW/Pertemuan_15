@@ -17,12 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function() {
-    echo '<h1 style="text-align: center">Hello World</h1>';
-    echo '<p style="text-align: center">Routing Ke-1</p>';
+Route::get('/siswa', function() {
+    return  view('siswa');
 });
 
-Route::get('/stock_item/{jenis?}/{merek?}', 
-    function ($a = 'Mobil', $b = 'Di Tokopedia') {
-    return "Cek sisa stok untuk $a $b";
+Route::get('/cari/{nama}/{umur}/{kota}', 
+function ($nama, $umur, $kota) {
+    return  view('cari')
+    -> with('nama', $nama)
+    -> with('umur', $umur)
+    -> with('kota', $kota);
+});
+
+Route::get('/how', function() {
+    return  view('how');
+});
+
+Route::get('/mapel', function() {
+    return  view('mapel');
 });
